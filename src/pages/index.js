@@ -13,10 +13,10 @@ export async function getServerSideProps() {
 }
 
 
-
 function HomePage({ users }) {
-  console.log(users)
+ 
   return (
+    <>
       <ul>
       {users.map((user) => (
           <li key={user.id}>
@@ -26,6 +26,10 @@ function HomePage({ users }) {
           </li>
       ))}
   </ul>
+   <Link href="/joke">
+     Get a Random Joke
+ </Link>
+ </>
   )
 }
 

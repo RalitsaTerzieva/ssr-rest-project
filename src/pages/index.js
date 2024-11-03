@@ -1,7 +1,5 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import { useQuery } from '@apollo/client';
-import { initApollo } from './../../lib/apollo/index';
 import GET_LATEST_SIGNS from './../../lib/apollo/queries/getLatestSigns';
 import axios from 'axios';
 import Sign from '@/components/Sign';
